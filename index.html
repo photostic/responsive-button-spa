@@ -90,6 +90,11 @@
         const photoGrid = document.getElementById("photo-grid");
         let scrollSpeed = 1; // Initial scroll speed
 
+        // Ensure the button is visible and clickable before the script runs
+        window.onload = function() {
+            buttonContainer.style.display = "block"; // Show button on page load
+        };
+
         function start() {
             console.log("Button clicked");
             // Play music
